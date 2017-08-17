@@ -86,3 +86,9 @@ counter-increment: parenthesis;
 content: counter(parenthesis) ") ";
 }
 
+.line {
+    display: block;
+    margin: auto;
+    border: 1px solid grey;
+    width: 100vh;
+  }
