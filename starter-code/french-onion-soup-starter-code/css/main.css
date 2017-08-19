@@ -7,3 +7,91 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
 }
+
+
+.title {
+  background-image: url(../images/soup.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 30vh 0;
+}
+
+/* there's an important distinction:
+h1 .myClass { } any element with class="myClass" within an <h1>
+h1.myClass  { } any <h1> with class="myClass" */
+
+h1.title {
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-weight: normal;
+  margin: 0 auto;
+  vertical-align: center;
+}
+
+.intro {
+  margin: 60px auto;
+  max-width: 50%;
+  line-height: 1.5;
+}
+
+.recipe-info {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.cooking-info {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.line {
+  display: block;
+  margin: auto;
+  border: 1px solid grey;
+  width: 100vh;
+}
+
+.ingredients-title {
+  margin: 40px auto;
+  max-width: 50%;
+}
+
+ul.ingredients {
+  margin: 20px auto;
+  max-width: 53%;
+}
+
+.ingredients li{
+  list-style: none;
+} 
+
+
+ul > li:before {
+  content: " - ";
+  }
+  
+
+h3.directions-title {
+  margin: 40px auto;
+  max-width: 50%;
+}
+
+ol.directions {
+  margin: 20px auto;
+  max-width: 53%;
+  counter-reset: parenthesis;
+}
+
+.directions li{
+  list-style: none;
+} 
+
+ol > li:before {
+  counter-increment: parenthesis;
+  content: counter(parenthesis) ") ";
+  }
